@@ -1,0 +1,23 @@
+.field { 
+    width: 95%;
+}
+
+.error { 
+    color: red;
+}
+
+#submit { 
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+h1 { 
+    text-align: center;
+}
+
+#form-container { 
+    padding: 10px;
+    padding-bottom: 50px;
+    border: 3px solid rgb(52, 156, 177);
+    border-radius: 10px;
+}
