@@ -96,6 +96,7 @@ Note: The input component must have a name prop, and its value should be unique.
 
 ### formState
 This object contains the entire information about the form state like errors, what are the values in the fields, whether they are touched or not, is the form submitted or not etc.,
+`const { register, handleSubmit, formState: { errors } } = useForm();`
 
 ### handleSubmit
 The handleSubmt method, manages form submission. It needs to be passed as the value to the onSubmit prop of the form
@@ -111,6 +112,13 @@ const onErrors = errors => console.log(errors);
 ```
 ### reset 
 With the help of this function, we can reset the entire form state.
+```
+const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
+const handleReset = () => {
+    reset(); // Reset the form values
+};
+```
 
 
 
