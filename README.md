@@ -99,7 +99,7 @@ This object contains the entire information about the form state like errors, wh
 `const { register, handleSubmit, formState: { errors } } = useForm();`
 
 ### handleSubmit
-The handleSubmt method, manages form submission. It needs to be passed as the value to the onSubmit prop of the form
+The handleSubmit method, manages form submission. It needs to be passed as the value to the onSubmit prop of the form
 component.
 ```
 const onFormSubmit = data => console.log(data);
