@@ -3,8 +3,8 @@ import * as Yup from 'yup';
 
 function FormikForm() { 
 
-    const handleSubmit = (data, {resetForm}) => {
-		window.alert(JSON.stringify(data))
+    const handleSubmit = (values, {resetForm}) => {
+		window.alert(JSON.stringify(values))
 		resetForm();
 	}
 
@@ -12,6 +12,23 @@ function FormikForm() {
         email: Yup.string().email("Invalid email address").required("Email is required"),
         password: Yup.string().required("Password is required")
     })
+
+    const customValidate = (values) => {
+        const errors = {}
+        if(!values.email) {
+            errors.email = "Required";
+        }
+
+        if(!values.password) {
+            errors.password = "Required";
+        }
+
+        if( values.email && !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(values.email)){
+            errors.email = "Invalid email address";
+        }
+
+        return errors;
+    }
 
     return (
         <>
@@ -22,7 +39,8 @@ function FormikForm() {
                     password:"",
                 }}
                 onSubmit={handleSubmit}
-                validationSchema={formValidationSchema}
+                // validationSchema={formValidationSchema}
+                validate={customValidate}
             >
                 {(props) => (
                     <Form>

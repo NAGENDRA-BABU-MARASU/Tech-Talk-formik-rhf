@@ -7,10 +7,10 @@ import FormVsform from "./optional/Form-vs-form"
 function App() {
   return (
     <div id="form-container">
-      {/* <FormikForm /> */}
+      <FormikForm />
       {/* <ReactHookForm /> */}
       {/* <FormVsform /> */}
-      <Field_demo />
+      {/* <Field_demo /> */}
     </div>
   )
 }
