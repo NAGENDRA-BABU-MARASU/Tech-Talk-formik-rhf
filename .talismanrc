@@ -6,8 +6,6 @@ fileignoreconfig:
   checksum: 926d41eb591a013c5379ea080ce7da61d6c861e797d45e2571373e30d24af39e
 - filename: src/ReactHookForm.jsx
   checksum: 84167d9b9fdf290a24fc9fa5d51fc652206d9e905fe97806e28d0ae4d793b178
-- filename: src/FormikForm.jsx
-  checksum: 8c9d69d13278b7ff088f0c007323c8d7970ad12833ba3f1d2e08dc71ffe3e11e
 - filename: README.md
   checksum: 02499f00f29c2b1ed61f99e0a3ce0ba98e5227f8bf5ed62fb03355ecd6fcf899
 - filename: src/FormikForm.jsx
