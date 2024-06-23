@@ -24,7 +24,7 @@ function FormikForm() {
                 onSubmit={handleSubmit}
                 validationSchema={formValidationSchema}
             >
-                {() => (
+                {(props) => (
                     <Form>
                         <fieldset>
                             <label id="email" htmlFor="email">Email</label>
@@ -37,8 +37,12 @@ function FormikForm() {
                             <Field className="field" type="password" id="password" name="password" />
                             <ErrorMessage className="error" name="password" component="div" />
                         </fieldset>
-                        
                         <input type="submit" id="submit" value="submit" />
+                        <hr/>
+                        {/*                             
+                        <ul>
+                            {Object.keys(props).map(key => <li key={key}>{key}:{JSON.stringify(props[key])}</li>)}
+                        </ul> */}
                     </Form>
                 )}
             </Formik>

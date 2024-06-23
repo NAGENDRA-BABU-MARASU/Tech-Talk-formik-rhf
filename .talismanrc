@@ -10,4 +10,6 @@ fileignoreconfig:
   checksum: 8c9d69d13278b7ff088f0c007323c8d7970ad12833ba3f1d2e08dc71ffe3e11e
 - filename: README.md
   checksum: 02499f00f29c2b1ed61f99e0a3ce0ba98e5227f8bf5ed62fb03355ecd6fcf899
+- filename: src/FormikForm.jsx
+  checksum: 8852c50151bc758a1f9323e5e7043a87adae24862bcd4cc9bfd2d22dccae3999
 version: ""
