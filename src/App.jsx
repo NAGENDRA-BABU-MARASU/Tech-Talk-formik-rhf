@@ -9,8 +9,6 @@ function App() {
     <div id="form-container">
       <FormikForm />
       {/* <ReactHookForm /> */}
-      {/* <FormVsform /> */}
-      {/* <Field_demo /> */}
     </div>
   )
 }
