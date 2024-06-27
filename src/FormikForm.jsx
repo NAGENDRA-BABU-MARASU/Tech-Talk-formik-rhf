@@ -1,16 +1,17 @@
 import { ErrorMessage, Field, Form, Formik, useField } from "formik";
-import * as Yup from 'yup';
+//
+// import * as Yup from 'yup';
 
 const MyTextField = (props) => {
     const [field, meta] = useField(props.label);
-    
-    const {error, touched} = meta;
+
+    const { error, touched } = meta;
 
     return (
         <>
             <fieldset>
                 <label id={props.label} htmlFor={props.label}>{props.fieldLabel}</label>
-                <input 
+                <input
                     type={props.type}
                     className="field"
                     {...field}
@@ -23,17 +24,15 @@ const MyTextField = (props) => {
 
 function FormikForm() {
 
-
-
     const handleSubmit = (values, { resetForm }) => {
         window.alert(JSON.stringify(values))
         resetForm();
     }
 
-    const formValidationSchema = Yup.object().shape({
-        email: Yup.string().email("Invalid email address").required("Email is required"),
-        password: Yup.string().required("Password is required")
-    })
+    // const formValidationSchema = Yup.object().shape({
+    //     email: Yup.string().email("Invalid email address").required("Email is required"),
+    //     password: Yup.string().required("Password is required")
+    // })
 
     const customValidate = (values) => {
         const errors = {}
@@ -48,7 +47,6 @@ function FormikForm() {
         if (values.email && !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(values.email)) {
             errors.email = "Invalid email address";
         }
-
         return errors;
     }
 
@@ -77,13 +75,9 @@ function FormikForm() {
                             <Field className="field" type="password" id="password" name="password" />
                             <ErrorMessage className="error" name="password" component="div" />
                         </fieldset> */}
+
                         <MyTextField fieldLabel="Password" type="password" label="password" />
                         <input type="submit" id="submit" value="submit" />
-                        <hr />
-                        {/*                             
-                        <ul>
-                            {Object.keys(props).map(key => <li key={key}>{key}:{JSON.stringify(props[key])}</li>)}
-                        </ul> */}
                     </Form>
                 )}
             </Formik>

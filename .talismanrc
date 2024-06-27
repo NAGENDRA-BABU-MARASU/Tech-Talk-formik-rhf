@@ -4,12 +4,12 @@ fileignoreconfig:
   checksum: 5fe742fa65b1dea8626174e639646dd7665eb5976ae9caa62855bc9bb33aeeb0
 - filename: package-lock.json
   checksum: 926d41eb591a013c5379ea080ce7da61d6c861e797d45e2571373e30d24af39e
-- filename: src/ReactHookForm.jsx
-  checksum: 84167d9b9fdf290a24fc9fa5d51fc652206d9e905fe97806e28d0ae4d793b178
 - filename: README.md
   checksum: 02499f00f29c2b1ed61f99e0a3ce0ba98e5227f8bf5ed62fb03355ecd6fcf899
 - filename: src/FormikForm.jsx
-  checksum: 55f06a78e6ddc981a3135f6130999abd1de79ab35fed0d4d30a57cf5ef065336
+  checksum: cc214288537c7d256d6e4686ca8bcf99474da8628e78719e247edad801df3495
+- filename: src/ReactHookForm.jsx
+  checksum: 6ccf9bb6ad14ded7b0492f957640e3420361a6e1d9d2d04843f55cd635eb6710
 version: ""
 
 version: ""
